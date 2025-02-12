@@ -1,0 +1,61 @@
+movement psuedo code
+
+
+
+//Variable names section
+
+initial position = 0
+
+define up_key
+
+define down_key
+
+define right_key
+
+define left_key     //initially i had also added the axis (x,y)
+
+
+
+//inputs section
+
+up_key = w ,+1 on x-axis
+
+down_key =s , -1 on x-axis
+
+right_key =d , +1 on y-axis
+
+left_key =a ,- 1 on y-axis
+
+
+
+//Logic section
+
+check if up_key_pressed
+
+  if true,velocity = +1
+
+     else velocity = 0
+
+check if down_key_pressed
+
+  if true,velocity = -1
+
+     else velocity = 0
+
+check if right_key_pressed
+
+  if true,velocity =+1
+
+     else velocity = 0
+
+check if left_key_pressed
+
+  if true,velocity = -1
+
+     else velocity = 0
+
+
+
+//output section
+
+player must move in respective position //not sure how to structure this part
