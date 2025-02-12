@@ -1,0 +1,42 @@
+// Variable names section
+initial_position = {x: 0, y: 0} 
+up_key = 'w'
+down_key = 's'
+right_key = 'd'
+left_key = 'a'
+
+// Inputs section
+// Note: This section assumes key presses are represented by booleans 
+is_up_pressed = False
+is_down_pressed = False
+is_right_pressed = False
+is_left_pressed = False
+
+// Logic section
+if is_up_pressed:
+    velocity_x = 1 
+else:
+    velocity_x = 0
+
+if is_down_pressed:
+    velocity_x = -1
+else:
+    velocity_x = 0
+
+if is_right_pressed:
+    velocity_y = 1
+else:
+    velocity_y = 0
+
+if is_left_pressed:
+    velocity_y = -1
+else:
+    velocity_y = 0
+
+// Output section
+new_position_x = initial_position.x + velocity_x
+new_position_y = initial_position.y + velocity_y
+
+// Update player position
+initial_position.x = new_position_x
+initial_position.y = new_position_y
